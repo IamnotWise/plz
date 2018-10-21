@@ -9,7 +9,7 @@ public class Group {
 	private LocalDateTime dateCreated;
 	private String title;
 	private String description;
-	List<Member> members = new ArrayList<>();
+	private List<Member> members = new ArrayList<>();
 	
 	public Group(String title, String description, LocalDateTime dateCreated) {
 		this.title = title;
@@ -36,7 +36,29 @@ public class Group {
 			}
 		return m;
 	}
+	public List<Member> getMembers(){
+	return members;
+	}
+
+	public List<Question> getQuestions() {
+	Membership mp;
+
+	return mp.getQuestions();
+	}
+
+	public List<Answer> getAnswers() {
+	Membership mp;
+
+	return mp.getAnswers();
+	}
+
+
+	public String toString() {
+        for(int i=0;i<members.size();i++)
 	
+	return "Date: " + dateCreated + "Title: " + title + "Description: " + description + "Members: " + members.get(i) + "." ;
+
+
+	}
 	
-	//void addMember
 }

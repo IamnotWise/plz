@@ -1,7 +1,7 @@
 package sprint1;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.HashMap;
 
 public class Member {
@@ -12,7 +12,7 @@ public class Member {
 	private String emailAddress;
 	private LocalDateTime dateCreated;
 	HashMap <Membership, Group> memberships = new HashMap<>();
-	ArrayList <Member> members = new ArrayList<>();
+	List<Member> members = new ArrayList<>();
 	
 	public Member(String firstName, String lastName, String screenName, String emailAddress, LocalDateTime dateCreated) {
 		this.firstName = firstName;
