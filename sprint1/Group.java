@@ -24,6 +24,18 @@ public class Group {
 	public String getDescription() {return description;}
 	
 	public int getNumMembers() {return members.size();}
+
+	public Member getMember(String emailAddress) {
+	Member m=null;
+
+	for(int i=0;i<members.size();i++) {
+		if(emailAddress.equals(members.get(i).getEmailAddress())
+			m=members.get(i);
+		else
+			System.out.println("Member not found");
+			}
+		return m;
+	}
 	
 	
 	//void addMember
