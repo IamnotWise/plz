@@ -10,7 +10,7 @@ List<Answer> answers;
 
 public Question(String title, String text, LocalDateTime date) {
 	title=title;
-	text = // text for question asked. 
+	text = super.text; 
 	date.now();
 
 	}

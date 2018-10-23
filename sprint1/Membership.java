@@ -20,7 +20,20 @@ class Membership {
 	void addToGroup() {
 		group.members.add(member);
 	}
-	
+
+
 	List<Question> getQuestions() { return questions;}
 	List<Answer> getAnswers() { return answers;}
+
+	public Group getGroup() {return group;}
+	public Member getMember() {return member;}	
+
+	public String toString() {
+	for(int i=0;i<questions.size();i++)
+		for(int j=0;i<answers.size();j++)
+
+		return "Questions: " + questions.get(i) + "Answers: " + answers.get(j) + "." ;
+
+
+	}
 }

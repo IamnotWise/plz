@@ -39,9 +39,6 @@ public class Member {
 	}
 	public int getNumGroups() {return memberships.size();}
 	
-	/*public Group getGroup(String groupID) {
-	
-	}*/	
-	
+		
 
 }

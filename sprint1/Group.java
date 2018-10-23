@@ -29,7 +29,7 @@ public class Group {
 	Member m=null;
 
 	for(int i=0;i<members.size();i++) {
-		if(emailAddress.equals(members.get(i).getEmailAddress())
+		if(emailAddress.equals(members.get(i).getEmailAddress()))
 			m=members.get(i);
 		else
 			System.out.println("Member not found");
